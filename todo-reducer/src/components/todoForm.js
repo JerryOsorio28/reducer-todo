@@ -30,8 +30,8 @@ const TodoForm = () => {
             <button onClick={(e) => {
                 // console.log(e)
                 e.preventDefault()
-                setToDo(toDo)
-                dispatch({ type: 'UPDATE_TODO', payload: toDo})
+                // setToDo(toDo)
+                dispatch({ type: 'ADD_TODO', payload: toDo})
             }
             }>Add Todo</button>
         </form>
