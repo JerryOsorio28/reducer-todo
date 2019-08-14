@@ -15,12 +15,18 @@ const TodoForm = () => {
         setToDo(change.target.value)
     }
 
+    const createListItems = () => //Itirates original array and creates a list of objects
+        state.map(object => {
+            return <li key={object.id}>{object.task}</li>
+        })
+    
+
     return (
         <form>
             <h1>To-do List:</h1>
-                <li>
-                    {state.task}
-                </li>
+                <ul>
+                    {createListItems()}
+                </ul>
             {/* <ToDoList state={state} /> */}
             <input 
                 type='text'

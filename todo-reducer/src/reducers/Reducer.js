@@ -17,10 +17,11 @@ export const initialState =
         id: 1528817084358,
         completed: false
       }
+
 ]
 
-    export const reducer = (state, action) => {
-        console.log(state)
+    export const reducer = (state = initialState, action) => {
+        // console.log(state)
 
         switch(action.type) {
             case 'ADD_TODO':
