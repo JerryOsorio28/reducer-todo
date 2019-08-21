@@ -20,15 +20,16 @@ export const initialState =
 
 ]
 
-    export const reducer = (state = initialState, action) => {
+    export const Reducer = (state = initialState, action) => {
         // console.log(state)
-
         switch(action.type) {
             case 'ADD_TODO':
-                return {
+                return{
                     ...state,
-                    task: action.payload,
-                    completed: !state.completed
+                     task: action.payload
                 }
+                
+                default:
+                    return state;
         }
-}
+};
