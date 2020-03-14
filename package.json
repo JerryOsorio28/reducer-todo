@@ -1,0 +1,8 @@
+{
+  "name": "reducer-todo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/JerryOsorio28/reducer-todo.git",
+  "author": "JerryOsorio28 <jerryOsorio28@users.noreply.github.com>",
+  "license": "MIT"
+}
